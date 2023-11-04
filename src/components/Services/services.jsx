@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from 'framer-motion';
-import { InView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 import "./services.css";
 import CorpDesign from "../../assets/skills4.webp";
 import WebDesign from "../../assets/skills1.webp";
@@ -12,8 +12,8 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 1.6 }
-  }
+    transition: { duration: 1.6 },
+  },
 };
 
 const SkillBar = ({ imgSrc, title, description, altText }) => (
@@ -48,7 +48,7 @@ const Services = () => {
         "Logo dizajn",
         "Vizit kartice i papirna korespondencija",
         "Korporativni brending i smernice za brend",
-        "Pakovanje i dizajn etiketa proizvoda"
+        "Pakovanje i dizajn etiketa proizvoda",
       ],
     },
     {
@@ -60,7 +60,7 @@ const Services = () => {
         "Responzivni dizajn",
         "Interakcija i animacija",
         "Prototipovanje i wireframe",
-        "Korisničko iskustvo i testiranje"
+        "Korisničko iskustvo i testiranje",
       ],
     },
     {
@@ -72,7 +72,7 @@ const Services = () => {
         "Digitalno slikarstvo i ilustracija",
         "Kreiranje tekstura i uzoraka",
         "Dizajn web elemenata i mockupova",
-        "Manipulacija slike i kompozicija"
+        "Manipulacija slike i kompozicija",
       ],
     },
     {
@@ -84,9 +84,9 @@ const Services = () => {
         "Rezanje i montaža video klipova",
         "Kolor korekcija i grading",
         "Specijalni efekti i grafike u pokretu",
-        "Audio obrada i sound design"
+        "Audio obrada i sound design",
       ],
-    }
+    },
   ];
 
   return (

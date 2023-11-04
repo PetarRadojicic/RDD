@@ -1,11 +1,15 @@
-import React from "react";
-import "./intro.css";
-import bg from "../../assets/image.png";
-import btnImg from "../../assets/hireme.png";
-import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import React from "react";
+import { Link } from "react-scroll";
+import CV from "../../assets/PetarRadojičićCV.pdf";
+import btnImg from "../../assets/hireme.png";
+import bg from "../../assets/image.png";
+import useButtonHover from "../../hooks/useButtonHover";
+import "./intro.css";
 
 const Intro = () => {
+  const buttonHover = useButtonHover();
+
   const textVariants = {
     initial: {
       opacity: 0,
@@ -32,6 +36,15 @@ const Intro = () => {
         duration: 1,
       },
     },
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "PetarRadojicicCV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -67,9 +80,11 @@ const Intro = () => {
         <Link to="your-destination" smooth={true}>
           <motion.button
             className="btn"
+            onClick={handleDownload}
             variants={textVariants}
             initial="initial"
             animate="animate"
+            whileHover={buttonHover}
           >
             <img src={btnImg} alt="CV" className="btnImg" />
             Skini moj CV

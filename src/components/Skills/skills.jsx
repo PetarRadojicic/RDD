@@ -1,38 +1,42 @@
-import React from 'react';
-import { 
-  SiHtml5, 
-  SiCss3, 
-  SiJavascript, 
-  SiGit, 
-  SiGithub, 
-  SiNpm, 
-  SiReact, 
-  SiSass, 
-  SiTypescript, 
+import React from "react";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiGit,
+  SiGithub,
+  SiNpm,
+  SiReact,
+  SiSass,
+  SiTypescript,
   SiWebpack,
-  SiJest
-} from 'react-icons/si';
-import { motion } from 'framer-motion';
-import './skills.css';
+  SiJest,
+} from "react-icons/si";
+import { motion } from "framer-motion";
+import "./skills.css";
 
 const Skills = () => {
   const skillVariant = {
     hidden: { opacity: 0, y: 20 },
-    visible: (custom) => ({ opacity: 1, y: 0, transition: { delay: custom * 0.1 } })
+    visible: (custom) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: custom * 0.1 },
+    }),
   };
 
   const skills = [
-    { icon: <SiHtml5 />, name: 'HTML' },
-    { icon: <SiCss3 />, name: 'CSS' },
-    { icon: <SiJavascript />, name: 'JavaScript' },
-    { icon: <SiGit />, name: 'Git' },
-    { icon: <SiGithub />, name: 'GitHub' },
-    { icon: <SiNpm />, name: 'NPM' },
-    { icon: <SiReact />, name: 'React' },
-    { icon: <SiSass />, name: 'Sass' },
-    { icon: <SiWebpack />, name: 'Webpack' },
-    { icon: <SiJest />, name: 'Jest' },
-    { icon: <SiTypescript />, name: 'TypeScript' }
+    { icon: <SiHtml5 />, name: "HTML" },
+    { icon: <SiCss3 />, name: "CSS" },
+    { icon: <SiJavascript />, name: "JavaScript" },
+    { icon: <SiGit />, name: "Git" },
+    { icon: <SiGithub />, name: "GitHub" },
+    { icon: <SiNpm />, name: "NPM" },
+    { icon: <SiReact />, name: "React" },
+    { icon: <SiSass />, name: "Sass" },
+    { icon: <SiWebpack />, name: "Webpack" },
+    { icon: <SiJest />, name: "Jest" },
+    { icon: <SiTypescript />, name: "TypeScript" },
   ];
 
   return (
@@ -42,7 +46,7 @@ const Skills = () => {
         <br></br>
         <div className="skills-container">
           {skills.map((skill, index) => (
-            <motion.div 
+            <motion.div
               key={skill.name}
               className="skill"
               custom={index}

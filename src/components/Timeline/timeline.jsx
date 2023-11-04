@@ -4,12 +4,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import './timeline.css';
+import "./timeline.css";
 const Timeline = () => {
   return (
     <>
-    <br></br>
-    <h1 id="Iskustvo" >Iskustvo</h1>
+      <br></br>
+      <h1 id="Iskustvo">Iskustvo</h1>
       <VerticalTimeline layout="2-columns" className="timeline-container">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"

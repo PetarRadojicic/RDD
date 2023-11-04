@@ -1,11 +1,11 @@
-import React from "react";
-import { Card, Image } from "antd";
 import { LinkOutlined } from "@ant-design/icons";
-import { motion } from 'framer-motion';
-import "./portfolio.css";
-import WeightFinderImage from "../../assets/WeightFinder.png";
+import { Card, Image } from "antd";
+import { motion } from "framer-motion";
+import React from "react";
 import ASCIIImage from "../../assets/ASCII.png";
 import ToDoImage from "../../assets/Todo.png";
+import WeightFinderImage from "../../assets/WeightFinder.png";
+import "./portfolio.css";
 
 const { Meta } = Card;
 
@@ -42,7 +42,7 @@ const Portfolio = () => {
   const cardVariants = {
     offscreen: {
       y: 50,
-      opacity: 0
+      opacity: 0,
     },
     onscreen: {
       y: 0,
@@ -50,9 +50,9 @@ const Portfolio = () => {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 0.8
-      }
-    }
+        duration: 0.8,
+      },
+    },
   };
   return (
     <section id="Portfolio">
@@ -61,7 +61,7 @@ const Portfolio = () => {
         {cardData.map((data, index) => (
           <motion.div
             key={data.id}
-            className="cardMotionWrapper" 
+            className="cardMotionWrapper"
             variants={cardVariants}
             initial="offscreen"
             whileInView="onscreen"
@@ -83,28 +83,28 @@ const Portfolio = () => {
                 title={<h1 className="cardTitle">{data.title}</h1>}
                 description={
                   <div className="cardContent">
-                  <p>{data.description}</p>
-                  <div className="cardLinks">
-                    <a
-                      href={data.liveViewUrl}
-                      className="cardLink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live view <LinkOutlined />
-                    </a>
-                    <a
-                      href={data.sourceCodeUrl}
-                      className="cardLink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Source code <LinkOutlined />
-                    </a>
+                    <p>{data.description}</p>
+                    <div className="cardLinks">
+                      <a
+                        href={data.liveViewUrl}
+                        className="cardLink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live view <LinkOutlined />
+                      </a>
+                      <a
+                        href={data.sourceCodeUrl}
+                        className="cardLink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Source code <LinkOutlined />
+                      </a>
+                    </div>
                   </div>
-                </div>
-              }
-            />
+                }
+              />
             </Card>
           </motion.div>
         ))}
