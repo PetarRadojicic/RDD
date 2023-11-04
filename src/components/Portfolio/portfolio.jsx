@@ -1,4 +1,4 @@
-import { LinkOutlined } from "@ant-design/icons";
+import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
 import { Card, Image } from "antd";
 import { motion } from "framer-motion";
 import React from "react";
@@ -99,7 +99,7 @@ const Portfolio = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Source code <LinkOutlined />
+                        Source code <GithubOutlined />
                       </a>
                     </div>
                   </div>
