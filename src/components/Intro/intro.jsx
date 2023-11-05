@@ -51,21 +51,12 @@ const Intro = () => {
     <section id="intro">
       <div className="introContent">
         <motion.span
-          className="hello"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          Zdravo,
-        </motion.span>
-        <motion.span
           className="introText"
           variants={textVariants}
           initial="initial"
           animate="animate"
         >
-          Ja sam <span className="introName">Petar</span> <br />
-          Web Dizajner/Programer
+          Radojičić <span className="introName">Digital Design</span> <br />
         </motion.span>
         <motion.p
           className="introPara"
@@ -73,9 +64,8 @@ const Intro = () => {
           initial="initial"
           animate="animate"
         >
-          Ja sam vešt veb programer sa iskustvom u kreiranju
+          Vizija u svakom pikselu
           <br />
-          vizualno privlačnih i korisnički prijateljskih veb sajtova.
         </motion.p>
         <Link to="your-destination" smooth={true}>
           <motion.button

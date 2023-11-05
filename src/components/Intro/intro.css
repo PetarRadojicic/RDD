@@ -27,13 +27,8 @@
   justify-content: center;
 }
 
-.hello {
-  font-size: 1.75rem;
-  font-weight: 100;
-}
-
 .introName {
-  color: lightblue;
+  color: yellow;
 }
 
 .introPara {
