@@ -21,7 +21,7 @@ const Timeline = () => {
         >
           <h3 className="vertical-timeline-element-title">Comtrade ITHS</h3>
           <h4 className="vertical-timeline-element-subtitle">2018-2022</h4>
-          <p>Elektro Tehnicar Informacionih Tehnologija</p>
+          <p>Elektrotehnicar Informacionih Tehnologija</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -36,7 +36,7 @@ const Timeline = () => {
             Singidunum Tehnicki Fakultet
           </h3>
           <h4 className="vertical-timeline-element-subtitle">2022-sad</h4>
-          <p>Softwarsko Inzenjerstvo</p>
+          <p>Softversko Inzenjerstvo</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

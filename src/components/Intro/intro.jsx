@@ -77,7 +77,7 @@ const Intro = () => {
             whileHover={buttonHover}
           >
             <img src={btnImg} alt="CV" className="btnImg" />
-            Skini moj CV
+            Preuzmi moj CV
           </motion.button>
         </Link>
       </div>
